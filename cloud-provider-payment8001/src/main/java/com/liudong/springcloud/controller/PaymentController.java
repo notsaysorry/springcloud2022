@@ -71,5 +71,9 @@ public class PaymentController {
         return new CommonResult<>(200, "ok", port + "");
     }
 
+    @GetMapping("/payment/test2")
+    public CommonResult<String> test2(){
+        return new CommonResult<>(200, "ok", port + "");
+    }
 
 }
