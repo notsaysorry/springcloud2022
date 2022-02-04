@@ -79,4 +79,10 @@ public class PaymentController {
     public CommonResult<String> test1(){
         return new CommonResult<>(200, "ok", port + "");
     }
+
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin()
+    {
+        return "hi ,i'am paymentzipkin server fall back，welcome to atguigu，O(∩_∩)O哈哈~";
+    }
 }
